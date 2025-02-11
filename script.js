@@ -50,8 +50,14 @@ $(document).ready(function() {
 
   ScrollReveal().reveal(".header a, .profile-photo, .about-content, .education", { origin: "left" });
   ScrollReveal().reveal(".header ul, .profile-text, .about-skills, .internship", { origin: "right" });
+  ScrollReveal().reveal(".header ul, .profile-text, .about-skills, .job", { origin: "right" });
   ScrollReveal().reveal(".project-title, .contact-title", { origin: "top" });
   ScrollReveal().reveal(".projects, .contact", { origin: "bottom" });
+
+  // Additional animations
+  ScrollReveal().reveal(".service-item", { origin: "bottom", distance: "50px", duration: 1000, delay: 300 });
+  ScrollReveal().reveal(".testimonial", { origin: "left", distance: "50px", duration: 1000, delay: 400 });
+  ScrollReveal().reveal(".footer", { origin: "top", distance: "50px", duration: 1000, delay: 500 });
 
   // Contact form submission
   const scriptURL = 'https://script.google.com/macros/s/AKfycbzUSaaX3XmlE5m9YLOHOBrRuCh2Ohv49N9bs4bew7xPd1qlgpvXtnudDs5Xhp3jF-Fx/exec';

@@ -249,7 +249,9 @@ body {
 }
 
 .education-content .row .education,
-.education-content .row .internship {
+.education-content .row .internship,
+.education-content .row .job 
+{
   color: #e5e5e5;
   flex: 0 0 50%;
   max-width: 50%;
@@ -282,6 +284,11 @@ body {
 }
 
 .education-content .row .internship .timeline-item {
+  position: relative;
+  padding-left: 37px;
+  padding-bottom: 30px;
+}
+ .job.timeline-item.timeline-item {
   position: relative;
   padding-left: 37px;
   padding-bottom: 30px;
