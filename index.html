@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,13 +20,14 @@
         };
     </script>
 </head>
+
 <body class="bg-primary text-gray-100">
-    
+
     <!-- Navbar -->
-    <nav class="bg-black bg-opacity-80 p-4 fixed w-full top-0 shadow-lg z-50 backdrop-blur-md">
+    <nav class="bg-black bg-opacity-80 p-6 fixed w-full top-0 shadow-lg z-50 backdrop-blur-md">
         <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-3xl font-extrabold text-accent">Portfolio</h1>
-            <ul class="flex space-x-6">
+            <h1 class="text-4xl font-extrabold text-accent">Portfolio</h1>
+            <ul class="flex space-x-8 text-lg">
                 <li><a href="#home" class="hover:text-secondary transition duration-300">Home</a></li>
                 <li><a href="#about" class="hover:text-secondary transition duration-300">About</a></li>
                 <li><a href="#projects" class="hover:text-secondary transition duration-300">Projects</a></li>
@@ -37,95 +39,99 @@
             </ul>
         </div>
     </nav>
-    
+
     <!-- Hero Section -->
-    <section id="home" class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-b from-black to-gray-900 text-white p-10" style="background-image: url('path_to_your_image.jpg'); background-size: cover; background-position: center;">
-        <h1 class="text-6xl font-extrabold">Hello, I'm <span class="text-accent">Sanskar Sharma</span></h1>
-        <p class="mt-6 text-2xl">A Professional Front-End Developer</p>
+    <section id="home" class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-b from-black to-gray-900 text-white p-10"
+        style="background-image: url('files/IMG_1439.JPG'); background-size:cover ;background-blend-mode: overlay ; background-position: center;">
+        <h1 class="text-6xl font-extrabold leading-tight">Hello, I'm <span class="text-accent">Sanskar Sharma</span></h1>
+        <p class="mt-6 text-2xl font-medium">A Professional Front-End Developer</p>
     </section>
 
     <!-- About Section -->
     <section id="about" class="py-20 bg-gray-900 text-center">
-        <div class="container mx-auto">
-            <h2 class="text-4xl font-bold text-white mb-10">About Me</h2>
-            <p class="text-lg text-gray-400 max-w-2xl mx-auto">I am a passionate front-end developer with experience in creating beautiful and functional user interfaces. I specialize in modern web technologies and love bringing ideas to life through design and code.</p>
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-semibold text-white mb-10">About Me</h2>
+            <p class="text-lg text-gray-400 max-w-3xl mx-auto">I am a passionate front-end developer with experience in creating beautiful and functional user interfaces. I specialize in modern web technologies and love bringing ideas to life through design and code.</p>
         </div>
     </section>
 
     <!-- Education Section -->
     <section id="education" class="py-20 bg-gray-800 text-center">
-        <div class="container mx-auto">
-            <h2 class="text-4xl font-bold text-white mb-10">Education</h2>
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-semibold text-white mb-10">Education</h2>
             <ul class="text-lg text-gray-400 list-disc list-inside">
                 <li>Bachelor of Technology (B.Tech) in Data Science - Shree Dada Ji Institute of Technology & Science (2023-2026)</li>
-            </ul>
-        </div>
-        <div class="container mx-auto">
-            <ul class="text-lg text-gray-400 list-disc list-inside">
-                <li>Diploma  in Electrical Engineering - ASM Polytechnic College (2019-2022)</li>
+                <li>Diploma in Electrical Engineering - ASM Polytechnic College (2019-2022)</li>
             </ul>
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="py-20 bg-gray-800 text-center">
-        <div class="container mx-auto">
-            <h2 class="text-4xl font-bold text-white mb-10">Projects</h2>
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-semibold text-white mb-10">Projects</h2>
             <p class="text-lg text-gray-400 mb-6">Here are some projects I have worked on:</p>
             <ul class="text-lg text-gray-400 list-disc list-inside">
                 <li>Portfolio Website - Showcasing my work and experience</li>
-                <li>Pralee Technology Clone - Created Replica of Pralee Technology Website</li>
-                <li>Expense Management Tool - A expense-based tracker application</li>
-                <li>TODO List - A list where we can add our daily tasks</li>
+                <li>Pralee Technology Clone - Created a replica of Pralee Technology Website</li>
+                <li>Expense Management Tool - A budget and expense tracking application</li>
+                <li><a href="https://sanskarsharmatodo.netlify.app">TODO List - A simple task management tool</li></a>
+                <li><a href="https://sanskardashboard.netlify.app/">ERP Dashboard</li></a>
+                <li><a href="https://sanskarcontactapp.netlify.app/">Contact App</li></a>
             </ul>
         </div>
     </section>
 
     <!-- Tasks Section -->
     <section id="tasks" class="py-20 bg-gray-900 text-center">
-        <div class="container mx-auto">
-            <h2 class="text-4xl font-bold text-white mb-10">Tasks</h2>
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-semibold text-white mb-10">Technical Skills (Tasks)</h2>
             <ul class="text-lg text-gray-400 list-disc list-inside">
                 <li><a href="#web-design" class="text-accent hover:underline">Web Design</a></li>
                 <li><a href="#front-end" class="text-accent hover:underline">Front-End Development</a></li>
                 <li><a href="#react" class="text-accent hover:underline">React.js</a></li>
                 <li><a href="#express" class="text-accent hover:underline">Express.js</a></li>
                 <li><a href="#node" class="text-accent hover:underline">Node.js</a></li>
-                <li><a href="#mongodb" class="text-accent hover:underline">MognoDB</a></li>
+                <li><a href="#mongodb" class="text-accent hover:underline">MongoDB</a></li>
             </ul>
         </div>
     </section>
 
     <!-- Internships Section -->
     <section id="internships" class="py-20 bg-gray-800 text-center">
-        <div class="container mx-auto">
-            <h2 class="text-4xl font-bold text-white mb-10">Internships</h2>
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-semibold text-white mb-10">Internships</h2>
             <ul class="text-lg text-gray-400 list-disc list-inside">
-                <li>Data Analysis with Power Bi (Pralee Technology)</li>
+                <li>Data Analysis with Power BI (Pralee Technology)</li>
                 <li>Frontend Developer (Digital Computing)</li>
-                <li>MERN STACK Developer - Pursuing (Digital Computing)</li>
+                <li>MERN Stack Developer (Currently Pursuing - Digital Computing)</li>
             </ul>
         </div>
     </section>
 
     <!-- Work Experience Section -->
     <section id="work-experience" class="py-20 bg-gray-900 text-center">
-        <div class="container mx-auto">
-            <h2 class="text-4xl font-bold text-white mb-10">Work Experience</h2>
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-semibold text-white mb-10">Work Experience</h2>
             <ul class="text-lg text-gray-400 list-disc list-inside">
-                <li>Engineer Trainee at Hial Group of Bus AC(May 2022 - September 2023)</li>
-                <li></li>
+                <li>Engineer Trainee at Hial Group of Bus AC (May 2022 - September 2023)</li>
             </ul>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-gray-900 text-center">
-        <div class="container mx-auto">
-            <h2 class="text-4xl font-bold text-white mb-10">Contact</h2>
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-semibold text-white mb-10">Contact</h2>
             <p class="text-lg text-gray-400 mb-6">Feel free to reach out to me for any inquiries, collaboration opportunities, or just a friendly chat!</p>
             <a href="mailto:sanskarsharmajio@gmail.com" class="bg-accent text-gray-900 px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:bg-yellow-400 transition duration-300">Contact Me</a>
         </div>
     </section>
+
+    <footer id="footer" class="mt-20 bg-black text-white text-center py-6">
+        <p>&copy; 2025 Sanskar Sharma. All Rights Reserved.</p>
+    </footer>
+
 </body>
+
 </html>
