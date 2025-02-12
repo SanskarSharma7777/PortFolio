@@ -1,289 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanskar</title>
-    <link rel="icon" href="https://i.ibb.co/zRsTj3p/Frame-1-37.png">
-
-
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        class="stylesheet">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E1E2E',
+                        secondary: '#8B5CF6',
+                        accent: '#FACC15',
+                    },
+                },
+            },
+        };
+    </script>
 </head>
+<body class="bg-primary text-gray-100">
+    
+    <!-- Navbar -->
+    <nav class="bg-black bg-opacity-80 p-4 fixed w-full top-0 shadow-lg z-50 backdrop-blur-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-extrabold text-accent">Portfolio</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-secondary transition duration-300">Home</a></li>
+                <li><a href="#about" class="hover:text-secondary transition duration-300">About</a></li>
+                <li><a href="#education" class="hover:text-secondary transition duration-300">Education</a></li>
+                <li><a href="#internships" class="hover:text-secondary transition duration-300">Internships</a></li>
+                <li><a href="#work" class="hover:text-secondary transition duration-300">Work Experience</a></li>
+                <li><a href="#projects" class="hover:text-secondary transition duration-300">Projects</a></li>
+                <li><a href="#tasks" class="hover:text-secondary transition duration-300">Tasks</a></li>
+                <li><a href="#contact" class="hover:text-secondary transition duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-b from-black to-gray-900 text-white p-10">
+        <h1 class="text-6xl font-extrabold">Hello, I'm <span class="text-accent">Sanskar Sharma</span></h1>
+        <p class="mt-6 text-2xl">A Professional Front-End Developer</p>
+        <button class="mt-6 bg-accent text-gray-900 px-6 py-3 rounded-full text-lg font-bold shadow-lg hover:bg-yellow-400 transition duration-300">View My Work</button>
+    </section>
 
-<body>
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-900 text-center">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-white mb-10">About Me</h2>
+            <p class="max-w-3xl mx-auto text-lg text-gray-400">I am a passionate front-end developer specializing in modern UI/UX designs, interactive web applications, and smooth animations.</p>
+        </div>
+    </section>
 
-    <!-------------------------- Header Area -------------------------->
-    <header class="header-area">
-        <div class="container">
-            <div class="header">
-
-            
-
-                <ul class="navbar">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-
-                <div class="menu_icon">
-                    <i class="fa fa-bars"></i>
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-gray-800 text-center">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-white mb-10">Education</h2>
+            <div class="max-w-3xl mx-auto text-lg text-gray-400">
+                <div class="border-l-4 border-secondary pl-4 mb-6">
+                    <h3 class="text-xl font-semibold">SSC - 59% (2018)</h3>
+                    <p>Holy Spirit Convent Senior Secondary School, Khandwa Madhya Pradesh</p>
                 </div>
-
-            </div>
-        </div>
-    </header>
-
-    <!-------------------------- Home Page -------------------------->
-    <div class="FirstElement" id="home">
-        <div class="profile-photo">
-            <img src="files/WhatsApp Image 2025-02-09 at 12.11.53_196c62cf.jpg" alt="profile picture">
-        </div>
-        <div class="profile-text">
-            <h5>Hi I'm </h5><br>
-            <h1>Sanskar</h1><br>
-            <p>Welcome to my portfolio website! I'm a passionate and aspiring data science with a strong desire to
-                create innovative solutions and push the boundaries of technology.With a deep love for coding and
-                problem-solving, I am constantly seeking opportunities to learn and grow in this ever-evolving field</p>
-
-            <div class="btn-group">
-                <a href="Resume.docx" class="btn   active">Download CV</a>
-                <a href="mailto:sanskarsharmajio@gmail.com" class="btn">Contact</a>
-            </div>
-
-            <div class="social">
-                <a href="mailto:sanskarsharmajio@gmail.com"><i class="fa fa-envelope"></i></a>
-                <a href="https://github.com/SanskarSharma7777"><i class="fa-brands fa-github"></i></a>
-                <a href=""><i class="fa fa-code"></i></a>
-                <a href="www.linkedin.com/in/sanskar-sharma-b9388a243"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-        </div>
-    </div>
-
-    <!-------------------------- About Section -------------------------->
-    <section class="about-area" id="about">
-        <div class="container">
-            <div class="about">
-
-                <div class="about-content">
-                    <h4>About Me</h4>
-                    <ul>
-                        <li>I am currently pursuing my Third year Bachelor's Degree in Data Science Engineering.I have
-                            built a solid foundation in software development, particularly in areas such as Java Script, SQL,
-                            Git, and GitHub.</li>
-                        <li> My expertise in these areas allows me to approach projects with confidence and deliver
-                            high-quality results.I have a strong belief in the value of continuous learning and staying
-                            adaptable in the ever-evolving world of software engineering.</li>
-                        <li> I actively seek out opportunities to expand my knowledge and skills, embracing new
-                            technologies and approaches.Feel free to explore my work and get in touch if you have any
-                            questions or opportunities to collaborate. </li>
-                    </ul>
+                <div class="border-l-4 border-secondary pl-4 mb-6">
+                    <h3 class="text-xl font-semibold">Diploma in Electrical Engineering (2019-2022)- (8.7 cpga upto 6TH sem)</h3>
+                    <p>ASM Polytechnic College , Mathura Uttar Pradesh</p>
                 </div>
-
-                <div class="about-skills">
-                    <ul>
-                        <li>Name:Sanskar</li>
-                        <li>Age:22</li>
-                        <li>From:India</li>
-                        <li>Email:sanskarshamrajio@gmail.com</li>
-                        <li>Availabiltiy:Fulltime</li>
-                        <li>Experience&lt;1yr</li>
-                    </ul>
+                <div class="border-l-4 border-secondary pl-4 mb-6">
+                    <h3 class="text-xl font-semibold">Bachelor’s Degree in Data Science - Pursuing</h3>
+                    <p>Shree Dada Ji Instiute of Technology & Science - 2023 to 2026</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Internships Section -->
+    <section id="internships" class="py-20 bg-gray-900 text-center">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-white mb-10">Internships</h2>
+            <div class="max-w-3xl mx-auto text-lg text-gray-400">
+                <div class="border-l-4 border-secondary pl-4 mb-6">
+                    <h3 class="text-xl font-semibold">Data Analysis In MS Excel & Power BI</h3>
+                    <p>Pralee Technology</p>
+                </div>
+                <div class="border-l-4 border-secondary pl-4 mb-6">
+                    <h3 class="text-xl font-semibold">Frontend Developer Intern</h3>
+                    <p>Digital Computing</p>
+                </div>
+                <div class="border-l-4 border-secondary pl-4 mb-6">
+                    <h3 class="text-xl font-semibold">Mern Stack Developer Intern</h3>
+                    <p>Digital Computing - Pursuing</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-------------- Education & Internship -------------->
-    <section class="education-content" id="education">
-        <div class="container">
-            <div class="row">
-                <div class="education ">
-                    <h3 class="title">Education</h3>
-                    <div class="row">
-                        <div class="timeline-box">
-                            <div class="timeline">
+    <!-- Work Experience Section -->
+    <section id="work" class="py-20 bg-gray-800 text-center">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-white mb-10">Work Experience</h2>
+            <div class="max-w-3xl mx-auto text-lg text-gray-400">
+                <div class="border-l-4 border-secondary pl-4 mb-6">
+                    <h3 class="text-xl font-semibold">Engineer Trainee & Quality Engineer</h3>
+                    <p>Hial Group of Bus AC- May 2022 to August 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">
-                                        SSC-59% 
-                                    </h3>
-                                    <h4 class="timeline-title">HOLY SPIRIT CONVENT SENIOR SECONDARY SCHOOL </h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i>  2017-2018
-                                    </h4>
-                                </div>
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">DIMPLOMA-89%</h3>
-                                    <h4 class="timeline-title">ASM POLYTECHNIC </h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> 2018-2022
-                                    </h4>
-                                </div>
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">BTECH - PURSUING</h3>
-                                    <h4 class="timeline-title">Shri Dadaji Institute of Technology & Science</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> 2023-2026
-                                    </h4>
-                                </div>
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-900 text-center">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-white mb-10">Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-accent">Project One</h3>
+                    <p class="text-gray-400 mt-4">Description of the project goes here. What technologies were used and what problem it solves.</p>
+                    <a href="#" class="text-secondary hover:text-accent mt-4 inline-block">View Project</a>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-accent">Project Two</h3>
+                    <p class="text-gray-400 mt-4">Description of the project goes here. What technologies were used and what problem it solves.</p>
+                    <a href="#" class="text-secondary hover:text-accent mt-4 inline-block">View Project</a>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-accent">Project Three</h3>
+                    <p class="text-gray-400 mt-4">Description of the project goes here. What technologies were used and what problem it solves.</p>
+                    <a href="#" class="text-secondary hover:text-accent mt-4 inline-block">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                            </div>
-                        </div>
+    <!-- Tasks Section -->
+    <section id=
+        <div class="container mx-auto">
+            <div class="ml-3 mt-4 flex md:flex-col">
+                <div class="flex flex-col md:flex-row mt-3 justify-between md:gap-6 md: mb-6 col-span-8">
+                    <p onclick="opentab(event, 'webdesign')" class="tablink activelink lg:border-2 hover:border-blue-500 text-blue-700 font-bold md:bg-blue-300 md:rounded-2xl lg:border-solid lg:border-gray-300 p-3">Web Development</p>
+                    <p onclick="opentab(event, 'frontend')" class="tablink lg:border-2 hover:border-blue-500 text-blue-700 font-bold md:bg-blue-300 md:rounded-2xl lg:border-solid lg:border-gray-300 p-3">Frontend Development</p>
+                    <p onclick="opentab(event, 'reactjs')" class="tablink lg:border-2 hover:border-blue-500 text-blue-700 font-bold md:bg-blue-300 md:rounded-2xl lg:border-solid lg:border-gray-300 p-3">React</p>
+                    <p onclick="opentab(event, 'nodejs')" class="tablink lg:border-2 hover:border-blue-500 text-blue-700 font-bold md:bg-blue-300 md:rounded-2xl lg:border-solid lg:border-gray-300 p-3">NodeJS</p>
+                    <p onclick="opentab(event, 'expressjs')" class="tablink lg:border-2 hover:border-blue-500 text-blue-700 font-bold md:bg-blue-300 md:rounded-2xl lg:border-solid lg:border-gray-300 p-3">ExpressJS</p>
+                    <p onclick="opentab(event, 'mangodb')" class="tablink lg:border-2 hover:border-blue-500 text-blue-700 font-bold md:bg-blue-300 md:rounded-2xl lg:border-solid lg:border-gray-300 p-3">Mangodb</p>
+                    <p onclick="opentab(event, 'mernstack')" class="tablink lg:border-2 hover:border-blue-500 text-blue-700 font-bold md:bg-blue-300 md:rounded-2xl lg:border-solid lg:border-gray-300 p-3">MERN STACK</p>
+                </div>
+                <div class="mt-6 ml-8">
+                    <!-- Tab Contents -->
+                    <div class="tabcontent" id="webdesign" style="display: none;"></div>
+                        <ul style="list-style-type: disc;">
+                            <a href="day1/day1.html"><li class="text-blue-400">Banner</li></a>
+                            <a href="day2/day2.html"><li class="text-blue-400">Intro Page</li></a>
+                            <a href="day3/day3.html"><li class="text-blue-400">Pralee Technology</li></a>
+                        </ul>
+                    </div>
+                    <div class="tabcontent" id="frontend">
+                        <ul style="list-style-type: disc;">
+                            <a href=""><li class="text-blue-400">FE1</li></a>
+                            <a href=""><li class="text-blue-400">FE2</li></a>
+                        </ul>
+                    </div>
+                    <div class="tabcontent" id="reactjs">
+                        <ul style="list-style-type: disc;">
+                            <a href=""><li class="text-blue-400">RJS1</li></a>
+                        </ul>
+                    </div>
+                    <div class="tabcontent" id="nodejs">
+                        <ul style="list-style-type: disc;">
+                            <a href=""><li class="text-blue-400">NJS1</li></a>
+                            <a href=""><li class="text-blue-400">NJS2</li></a>
+                        </ul>
+                    </div>
+                    <div class="tabcontent" id="expressjs">
+                        <ul style="list-style-type: disc;">
+                            <a href=""><li class="text-blue-400">EJS1</li></a>
+                            <a href=""><li class="text-blue-400">EJS2</li></a>
+                        </ul>
+                    </div>
+                    <div class="tabcontent" id="mangodb">
+                        <ul style="list-style-type: disc;">
+                            <a href=""><li class="text-blue-400">MDB1</li></a>
+                            <a href=""><li class="text-blue-400">MDB2</li></a>
+                        </ul>
+                    </div>
+                    <div class="tabcontent" id="mernstack">
+                        <ul style="list-style-type: disc;">
+                            <a href=""><li class="text-blue-400">MERN1</li></a>
+                            <a href=""><li class="text-blue-400">MERN2</li></a>
+                        </ul>
                     </div>
                 </div>
-                <div class="internship">
-                    <h3 class="title">Internship</h3>
-                    <div class="row">
-                        <div class="timeline-box">
-                            <div class="timeline">
-
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">
-                                        DATA ANALYSIS IN MS EXCEL AND POWER BI
-                                    </h3>
-                                    <h4 class="timeline-title">PRLAEE TECHNOLOGY</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> 
-                                    </h4>
-                                    <li class="timeline-text">Engaged in a hands-on data analysis field, gaining hands-on experience and enhancing
-                                        skills.
-                                    </li>
-                                </div>
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">FRONT END DEVELOPMENT </h3>
-                                    <h4 class="timeline-title">DIGITAL COMPUTING </h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> 
-                                    </h4>
-                                    <li class="timeline-text"> Proficient in DATA SCIENCE company, with expertise in Java, SQL, Git, and GitHub.</li>
-                                </div>
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">MERN STACK  </h3>
-                                    <h4 class="timeline-title">DIGITAL COMPUTING </h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> 
-                                    </h4>
-                                    <li class="timeline-text"> Proficient in DATA SCIENCE company, with expertise in Java, SQL, Git, and GitHub.</li>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-        </div>
-        <div class="job">
-            <h3 class="title">JOB Experience</h3>
-            <div class="row">
-                <div class="timeline-box">
-                    <div class="timeline">
-
-                        <!-- Timeline-item -->
-                        <div class="timeline-item">
-                            <div class="circle-dot"></div>
-                            <h3 class="timeline-title">
-                                QUALITY ENGINEER
-                            </h3>
-                            <h4 class="timeline-title">HIAL GROUP OF BUS AC PVT. LTD. (2022-2023)</h4>
-                            <h4 class="timeline-title">
-                                <i class="fa fa-calendar"></i> 
-                            </h4>
-                            <li class="timeline-text">HIAL Bus AC & Interiors, supplied by Haiger India Air Conditioning Pvt. Ltd., offers air conditioners and bus interior services.
-                            </li>
-                        </div>
-                    </div>
-                </div>
-
-    </section>
-
-
-    <!-------------------------- Projects -------------------------->
-    <section class="project-content" id="projects">
-        <div class="container">
-            <div class="project-title">
-                <h4>My Projects</h4>
-                <p>Discover my projects, where creativity meets innovation</p>
             </div>
-            <div class="projects">
-                <!-- 1st Project -->
-                <a href="https://sanskarsharma7777.github.io/MERN-INTERNSHIP" target="_blank">
-                <div class="project">
-                    <i class="fa fa-coffee"></i>
-                    <h4>BANNER TASK</h4>
-                </a>
-                    
-                </div>
-                <!-- 2nd Project -->
-                <div class="project">
-                    <i class="fa fa-car"></i>
-                    <h4>Second Project</h4>
-                    
-                </div>
-                <!-- 3rd Project -->
-                <div class="project">
-                    <i class="fa fa-desktop"></i>
-                    <h4>Portfolio Website</h4>
-                    <p>Created a portfolio website using HTML, CSS, and JavaScript, It serves as a platform to introduce
-                        myself, share my projects, and provide information about my education and internship.</p>
-                </div>
+        </section>
 
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-900 text-center">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-white mb-10">Contact</h2>
+                <p class="text-lg text-gray-400 mb-6">Feel free to reach out to me for any inquiries, collaboration opportunities, or just a friendly chat!</p>
+                <a href="mailto:sanskarsharmajio@gmail.com" class="bg-accent text-gray-900 px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:bg-yellow-400 transition duration-300">Contact Me</a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-------------------------- Contact Me -------------------------->
+    <script>
+        // Smooth scrolling with enhanced effects
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
 
-    <section class="contact-content" id="contact">
-        <div class="container">
-            <div class="contact-title">
-                <h4>Contact Me</h4>
-                <p>Get In Touch</p>
-            </div>
-            <div class="contact">
-                <form name="submitToGoogleSheet">
-                    <input type="text" name="NAME" placeholder="Name" required>
-                    <input type="email" name="EMAIL" placeholder="Email" required>
-                    <input type="text" name="SUBJECT" placeholder="Subject">
-                    <textarea name="MESSAGE" placeholder="Message"></textarea>
-                    <input type="submit" value="Send Message" class="submit">
-                </form>
-                <span id="msg"></span>
-            </div>
-        </div>
-    </section>
-
-    <!-------------------------- JS -------------------------->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
-        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="script.js"></script>
-
-    <!-------------------------- Footer section -------------------------->
-    <footer class="footer">
-        <small class="message">Thanks for visiting and happy coding!</small>
-        <small class="copyright">&copy; Copyright 2025. All rights reserved.</small>
-    </footer>
-
+        // Tab functionality
+        function opentab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("activelink");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.classList.add("activelink");
+        }
+    </script>
 </body>
-
 </html>
