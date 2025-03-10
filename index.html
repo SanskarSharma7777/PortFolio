@@ -19,6 +19,44 @@
             },
         };
     </script>
+    <style>
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .hover-underline-animation {
+            display: inline-block;
+            position: relative;
+            color: inherit;
+        }
+
+        .hover-underline-animation::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: currentColor;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        .hover-underline-animation:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    </style>
 </head>
 
 <body class="bg-primary text-gray-100">
@@ -27,28 +65,30 @@
     <nav class="bg-black bg-opacity-80 p-6 fixed w-full top-0 shadow-lg z-50 backdrop-blur-md">
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-4xl font-extrabold text-accent">Portfolio</h1>
-            <ul class="flex space-x-8 text-lg">
-                <li><a href="#home" class="hover:text-secondary transition duration-300">Home</a></li>
-                <li><a href="#about" class="hover:text-secondary transition duration-300">About</a></li>
-                <li><a href="#projects" class="hover:text-secondary transition duration-300">Projects</a></li>
-                <li><a href="#tasks" class="hover:text-secondary transition duration-300">Tasks</a></li>
-                <li><a href="#education" class="hover:text-secondary transition duration-300">Education</a></li>
-                <li><a href="#internships" class="hover:text-secondary transition duration-300">Internships</a></li>
-                <li><a href="#work-experience" class="hover:text-secondary transition duration-300">Work Experience</a></li>
-                <li><a href="#contact" class="hover:text-secondary transition duration-300">Contact</a></li>
+            <ul class="flex space-x-8 text-lg"></ul>
+                <li><a href="#home" class="hover:text-secondary transition duration-300 hover-underline-animation">Home</a></li>
+                <li><a href="#about" class="hover:text-secondary transition duration-300 hover-underline-animation">About</a></li>
+                <li><a href="#education" class="hover:text-secondary transition duration-300 hover-underline-animation">Education</a></li>
+                <li><a href="#projects" class="hover:text-secondary transition duration-300 hover-underline-animation">Projects</a></li>
+                <li><a href="#tasks" class="hover:text-secondary transition duration-300 hover-underline-animation">Skills</a></li>
+                <li><a href="#internships" class="hover:text-secondary transition duration-300 hover-underline-animation">Internships</a></li>
+                <li><a href="#work-experience" class="hover:text-secondary transition duration-300 hover-underline-animation">Experience</a></li>
+                <li><a href="#contact" class="hover:text-secondary transition duration-300 hover-underline-animation">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-b from-black to-gray-900 text-white p-10"
-        style="background-image: url('files/IMG_1439.JPG'); background-size:cover ;background-blend-mode: overlay ; background-position: center;">
-        <h1 class="text-6xl font-extrabold leading-tight">Hello, I'm <span class="text-accent">Sanskar Sharma</span></h1>
-        <p class="mt-6 text-2xl font-medium">A Professional Front-End Developer</p>
+    <section id="home" class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-b from-black to-gray-900 text-white p-10 fade-in"
+        style="background-image: url('files/IMG_1439.JPG'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="bg-black/50 py-10 px-8 rounded-lg">
+            <h1 class="text-6xl font-extrabold leading-tight">Hello, I'm <span class="text-accent">Sanskar Sharma</span></h1>
+            <p class="mt-6 text-2xl font-medium">A Professional Front-End Developer</p>
+        </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-gray-900 text-center">
+    <section id="about" class="py-20 bg-gray-900 text-center fade-in">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-semibold text-white mb-10">About Me</h2>
             <p class="text-lg text-gray-400 max-w-3xl mx-auto">I am a passionate front-end developer with experience in creating beautiful and functional user interfaces. I specialize in modern web technologies and love bringing ideas to life through design and code.</p>
@@ -56,7 +96,7 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="py-20 bg-gray-800 text-center">
+    <section id="education" class="py-20 bg-gray-800 text-center fade-in">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-semibold text-white mb-10">Education</h2>
             <ul class="text-lg text-gray-400 list-disc list-inside">
@@ -67,38 +107,40 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-gray-800 text-center">
+    <section id="projects" class="py-20 bg-gray-800 text-center fade-in">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-semibold text-white mb-10">Projects</h2>
             <p class="text-lg text-gray-400 mb-6">Here are some projects I have worked on:</p>
             <ul class="text-lg text-gray-400 list-disc list-inside">
-                <li><a href="https://sanskarsharmaportfolio.netlify.app/" class="text-accent hover:underline">Portfolio Website - Showcasing my work and experience</li></a>
+                <li><a href="https://sanskarsharmaportfolio.netlify.app/" class="text-accent hover:underline">Portfolio Website - Showcasing my work and experience</a></li>
                 <li>Pralee Technology Clone - Created a replica of Pralee Technology Website</li>
                 <li>Expense Management Tool - A budget and expense tracking application</li>
-                <li><a href="https://sanskarsharmatodo.netlify.app" class="text-accent hover:underline">TODO List - A simple task management tool</li></a>
-                <li><a href="https://sanskardashboard.netlify.app/"class="text-accent hover:underline">ERP Dashboard</li></a>
-                <li><a href="https://sanskarcontactapp.netlify.app/"class="text-accent hover:underline">Contact App</li></a>
+                <li><a href="https://sanskarsharmatodo.netlify.app" class="text-accent hover:underline">TODO List - A simple task management tool</a></li>
+                <li><a href="https://sanskardashboard.netlify.app/" class="text-accent hover:underline">ERP Dashboard</a></li>
+                <li><a href="https://sanskarcontactapp.netlify.app/" class="text-accent hover:underline">Contact App</a></li>
             </ul>
         </div>
     </section>
 
-    <!-- Tasks Section -->
-    <section id="tasks" class="py-20 bg-gray-900 text-center">
+    <!-- Skills Section -->
+    <section id="tasks" class="py-20 bg-gray-900 text-center fade-in">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-semibold text-white mb-10">Technical Skills (Tasks)</h2>
+            <h2 class="text-4xl font-semibold text-white mb-10">Technical Skills</h2>
             <ul class="text-lg text-gray-400 list-disc list-inside">
-                <li><a href="#web-design" class="text-accent hover:underline">Web Design</a></li>
-                <li><a href="#front-end" class="text-accent hover:underline">Front-End Development</a></li>
-                <li><a href="#react" class="text-accent hover:underline">React.js</a></li>
-                <li><a href="#express" class="text-accent hover:underline">Express.js</a></li>
-                <li><a href="#node" class="text-accent hover:underline">Node.js</a></li>
-                <li><a href="#mongodb" class="text-accent hover:underline">MongoDB</a></li>
+                <li>Web Design
+                    <ul> <a href="index.html            "class="text-accent hover:underline ">Task 1</a></ul>
+                </li>
+                <li>Front-End Development with JavaScript</li>
+                <li>React.js</li>
+                <li>Express.js</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
             </ul>
         </div>
     </section>
 
     <!-- Internships Section -->
-    <section id="internships" class="py-20 bg-gray-800 text-center">
+    <section id="internships" class="py-20 bg-gray-800 text-center fade-in">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-semibold text-white mb-10">Internships</h2>
             <ul class="text-lg text-gray-400 list-disc list-inside">
@@ -110,17 +152,20 @@
     </section>
 
     <!-- Work Experience Section -->
-    <section id="work-experience" class="py-20 bg-gray-900 text-center">
+    <section id="work-experience" class="py-20 bg-gray-900 text-center fade-in">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-semibold text-white mb-10">Work Experience</h2>
-            <ul class="text-lg text-gray-400 list-disc list-inside">
-                <li>Engineer Trainee at Hial Group of Bus AC (May 2022 - September 2023)</li>
+            <ul class="text-lg text-gray-400 list-disc list-inside space-y-4">
+                <li class="relative group">
+                    <div class="absolute inset-0 bg-secondary opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg"></div>
+                    <span class="relative group-hover:text-white transition duration-300">Engineer Trainee at Hial Group of Bus AC (May 2022 - September 2023)</span>
+                </li>
             </ul>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-900 text-center">
+    <section id="contact" class="py-20 bg-gray-900 text-center fade-in">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-semibold text-white mb-10">Contact</h2>
             <p class="text-lg text-gray-400 mb-6">Feel free to reach out to me for any inquiries, collaboration opportunities, or just a friendly chat!</p>
